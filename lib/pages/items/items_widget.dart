@@ -134,8 +134,10 @@ class _ItemsWidgetState extends State<ItemsWidget>
                         'Choose from our delicious offerings',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'Inter',
-                              color: const Color(0xFFE0E0E0),
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
                               letterSpacing: 0.0,
+                              fontWeight: FontWeight.w800,
                             ),
                       ),
                     ].divide(const SizedBox(height: 8.0)),
@@ -213,7 +215,7 @@ class _ItemsWidgetState extends State<ItemsWidget>
                                         width: double.infinity,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .accent4,
+                                              .secondaryBackground,
                                           boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 0.0,
