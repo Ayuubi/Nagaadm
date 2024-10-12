@@ -675,7 +675,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                             .secondaryBackground,
                                         fontSize: 16.0,
                                         letterSpacing: 0.0,
-                                        fontWeight: FontWeight.normal,
+                                        fontWeight: FontWeight.w500,
                                       ),
                                 ),
                                 ListView(
