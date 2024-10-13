@@ -248,14 +248,11 @@ class _OrdersWidgetState extends State<OrdersWidget> {
                                                         BorderRadius.circular(
                                                             30.0),
                                                   ),
-                                                  child: Opacity(
-                                                    opacity: 0.3,
-                                                    child: Image.asset(
-                                                      'assets/images/image_2024-10-11_021851335.png',
-                                                      width: 40.0,
-                                                      height: 26.0,
-                                                      fit: BoxFit.fill,
-                                                    ),
+                                                  child: Image.asset(
+                                                    'assets/images/image_2024-10-11_021851335.png',
+                                                    width: 40.0,
+                                                    height: 26.0,
+                                                    fit: BoxFit.fill,
                                                   ),
                                                 ),
                                               ],
@@ -302,7 +299,7 @@ class _OrdersWidgetState extends State<OrdersWidget> {
                                                                 0.0, 0.0),
                                                     color: FlutterFlowTheme.of(
                                                             context)
-                                                        .secondaryText,
+                                                        .info,
                                                     textStyle: FlutterFlowTheme
                                                             .of(context)
                                                         .bodySmall
