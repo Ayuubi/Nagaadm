@@ -112,8 +112,8 @@ class _ItemsWidgetState extends State<ItemsWidget>
                                   .secondaryBackground,
                               size: 24.0,
                             ),
-                            onPressed: () {
-                              print('IconButton pressed ...');
+                            onPressed: () async {
+                              context.safePop();
                             },
                           ),
                           Text(
@@ -124,8 +124,9 @@ class _ItemsWidgetState extends State<ItemsWidget>
                                   fontFamily: 'Inter Tight',
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
+                                  fontSize: 20.0,
                                   letterSpacing: 0.0,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.w300,
                                 ),
                           ),
                         ].divide(const SizedBox(width: 16.0)),
@@ -137,7 +138,7 @@ class _ItemsWidgetState extends State<ItemsWidget>
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               letterSpacing: 0.0,
-                              fontWeight: FontWeight.w800,
+                              fontWeight: FontWeight.w300,
                             ),
                       ),
                     ].divide(const SizedBox(height: 8.0)),
@@ -215,7 +216,7 @@ class _ItemsWidgetState extends State<ItemsWidget>
                                         width: double.infinity,
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
+                                              .accent4,
                                           boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 0.0,
@@ -226,6 +227,10 @@ class _ItemsWidgetState extends State<ItemsWidget>
                                               ),
                                             )
                                           ],
+                                          border: Border.all(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                          ),
                                         ),
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
@@ -252,7 +257,7 @@ class _ItemsWidgetState extends State<ItemsWidget>
                                                     child: Image.asset(
                                                       'assets/images/image_2024-10-11_021851335.png',
                                                       width: 60.0,
-                                                      height: 60.0,
+                                                      height: 71.0,
                                                       fit: BoxFit.cover,
                                                     ),
                                                   ),
