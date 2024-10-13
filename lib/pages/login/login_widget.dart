@@ -410,26 +410,6 @@ class _LoginWidgetState extends State<LoginWidget>
                                     r'''$.result.username''',
                                   ) !=
                                   null) {
-                                await showDialog(
-                                  context: context,
-                                  builder: (alertDialogContext) {
-                                    return AlertDialog(
-                                      title: const Text('Welcome Dear'),
-                                      content: Text(getJsonField(
-                                        (_model.apiResultmdq?.jsonBody ?? ''),
-                                        r'''$.result.name''',
-                                      ).toString()),
-                                      actions: [
-                                        TextButton(
-                                          onPressed: () =>
-                                              Navigator.pop(alertDialogContext),
-                                          child: const Text('Go to dashboard'),
-                                        ),
-                                      ],
-                                    );
-                                  },
-                                );
-
                                 context.pushNamed('Dashboard');
                               } else {
                                 ScaffoldMessenger.of(context).showSnackBar(

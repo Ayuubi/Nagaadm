@@ -1,3 +1,4 @@
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -56,33 +57,65 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                     end: const AlignmentDirectional(0, 1.0),
                   ),
                 ),
-                child: Align(
-                  alignment: const AlignmentDirectional(0.0, 0.0),
-                  child: Padding(
-                    padding: const EdgeInsetsDirectional.fromSTEB(1.0, 1.0, 1.0, 1.0),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            'Welcome To Nagaad Caffe',
+                child: Stack(
+                  children: [
+                    Align(
+                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Align(
+                            alignment: const AlignmentDirectional(-1.0, -1.0),
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  349.0, 0.0, 0.0, 0.0),
+                              child: FlutterFlowIconButton(
+                                borderColor: Colors.black,
+                                borderRadius: 100.0,
+                                buttonSize: 40.0,
+                                fillColor:
+                                    FlutterFlowTheme.of(context).secondaryText,
+                                hoverColor: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
+                                hoverIconColor:
+                                    FlutterFlowTheme.of(context).primary,
+                                icon: Icon(
+                                  Icons.lock_outline_sharp,
+                                  color: FlutterFlowTheme.of(context).info,
+                                  size: 24.0,
+                                ),
+                                showLoadingIndicator: true,
+                                onPressed: () {
+                                  print('IconButton pressed ...');
+                                },
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Align(
+                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Text(
+                            'Welcome To Nagaad Coffe \$ Wedding Halls',
                             style: FlutterFlowTheme.of(context)
-                                .headlineMedium
+                                .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter Tight',
+                                  fontFamily: 'Inter',
                                   color: FlutterFlowTheme.of(context)
-                                      .secondaryBackground,
+                                      .primaryBackground,
+                                  fontSize: 18.0,
                                   letterSpacing: 0.0,
-                                  fontWeight: FontWeight.normal,
+                                  fontWeight: FontWeight.bold,
                                 ),
                           ),
-                        ),
-                      ].divide(const SizedBox(height: 16.0)),
+                        ],
+                      ),
                     ),
-                  ),
+                  ],
                 ),
               ),
               Container(
